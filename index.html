@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ToDo додаток</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-4 mb-2">ToDo додаток</div>
+
+      <!-- //List of tasks -->
+
+      <!-- Form -->
+      <div class="card bg-light my-5">
+        <div class="card-header">Додати нове завдання</div>
+        <div class="card-body">
+          <form id="form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="taskInput"
+                placeholder="Текст завдання"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Що робимо, скільки часу витрачаємо, який результат
+                отримуємо.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg active">
+              Додати
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="h4 mb-3">Список завдань на сьогодні</div>
+
+      <!-- List of tasks -->
+      <div class="card mb-4">
+        <ul id="tasksList" class="list-group list-group-flush"></ul>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
